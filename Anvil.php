@@ -1289,6 +1289,16 @@ class Anvil
     }
 
     /**
+     * convert an array to an object
+     * @param  array $arr [the array to be converted]
+     * @return object
+     */
+    public function ArrayToObject($arr)
+    {
+        return json_decode(json_encode($arr));
+    }
+
+    /**
      * build an array that represents where pagination points would occur.
      * 
      * @param  integer $record  [the starting record number]
